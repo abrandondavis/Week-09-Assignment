@@ -1,0 +1,32 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+//--------------------------------------------------------------------------------------------------------------//
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here
+//--------------------------------------------------------------------------------------------------------------//
+
+:root {}
+
+.site-background-main {
+  position: relative;
+  background-image:
+    url("../images/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+// changed opacity modifier to allow background to show through navbar
+.bg-body-tertiary {
+  --bs-bg-opacity: 0.7;
+}
+
+
+// A failed attempt to change the color of the active link on the navbar. Might come back to this.
+// .navbar-nav > .navbar > .active > a {
+//   color: rgb(254, 177, 21);
+// }

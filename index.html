@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<!--
+#### Create a new website using HTML and Bootstrap. The website must include the following:
+
+## At least 2 pages.
+
+## A Bootstrap navbar, table, and form.
+
+## Bootstrap grid used throughout to format elements
+
+## Elements should stack vertically when the window is small
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="/css/site.css" rel="stylesheet">
+	<!-- script grabbed from bootstrap homepage to import some default javascript to make navbar collapse functional -->
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+</head>
+
+<body class="site-background-main">
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid"> <!-- container-fluid used to fill entire width of page regardless of size -->
+			<a class="navbar-brand" href="index.html">Navbar</a>
+			<!-- navbar brand is a dual purpose element. Can be used to add brand logo, text, and make them also be a link to another page (typically home)-->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					<!-- aria tags are not a necessary part of this project. its intended purpose is for screen readers-->
+					<a class="nav-link" href="login.html">Login</a>
+					<a class="nav-link" href="placeholder.html">Placeholder</a>
+					<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="">
+		<!-- Empty and redundant div with no class and not a necessary container. Should probably be removed, but whatever -->
+		<div class="container text-center">
+			<div class="row"> <!-- row class to define a single row element -->
+
+
+
+				<!-- div classes defining the columns in the row
+				lg = large to set minimum width before collapse and stack 
+				border class added and border-2 to set size
+				mb-1 = margin bottom: size: 1
+				in-line styles just to make text more readable on the selected background
+				filled with lorem ipsums to make appearance of content 
+			
+				The framework for this entire section can be made with emmet line "(div.col>(lorem20+hr+lorem40))*4" 
+				the lorem counts may be wrong, but irrelevant. Default when no value given is 30-->
+				<div class="col-lg-3 border rounded mb-1"
+					style="background-color: rgba(8, 140, 234, 0.5); text-shadow: 2px 2px 2px black;">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit iste amet at repellendus corporis odio
+					expedita labore sint nam consectetur?
+					<hr /> <!-- <hr>'s added just to add more flair to the idea, not necessary for any particular reason-->
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus nobis veritatis itaque dolorum
+					reprehenderit magnam modi illo nihil, distinctio praesentium officiis adipisci consequatur eos impedit ipsum
+					ducimus cumque soluta quaerat deserunt sequi aspernatur voluptatem? Culpa neque eius odit aliquam.
+				</div>
+				<div class="col-lg-3 border border-2 rounded mb-1"
+					style="background-color: rgba(0, 41, 99, 0.5); text-shadow: 2px 2px 2px black;">
+					Eaque veritatis quo vel, cumque aliquam vero debitis molestias asperiores nesciunt quas pariatur sed molestiae
+					nostrum quae obcaecati, itaque totam!
+					<hr />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus nobis veritatis itaque dolorum
+					reprehenderit magnam modi illo nihil, distinctio praesentium officiis adipisci consequatur eos impedit ipsum
+					ducimus cumque soluta quaerat deserunt sequi aspernatur voluptatem? Culpa neque eius odit aliquam.
+				</div>
+				<div class="col-lg-3 border border-2 rounded mb-1"
+					style="background-color: rgba(8, 140, 234, 0.5); text-shadow: 2px 2px 2px black;">
+					Praesentium sed, reprehenderit facere doloremque numquam rerum sapiente eum, perspiciatis error animi facilis
+					ab perferendis ipsa minima nulla, assumenda omnis!
+					<hr />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus nobis veritatis itaque dolorum
+					reprehenderit magnam modi illo nihil, distinctio praesentium officiis adipisci consequatur eos impedit ipsum
+					ducimus cumque soluta quaerat deserunt sequi aspernatur voluptatem? Culpa neque eius odit aliquam.
+				</div>
+				<div class="col-lg-3 border border-2 rounded mb-1"
+					style="background-color: rgba(0, 41, 99, 0.5); text-shadow: 2px 2px 2px black;">
+					Quam a assumenda ex alias necessitatibus excepturi veritatis velit animi laboriosam. Nesciunt doloribus,
+					dolore voluptatibus itaque ex quam repudiandae aliquid.
+					<hr />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus nobis veritatis itaque dolorum
+					reprehenderit magnam modi illo nihil, distinctio praesentium officiis adipisci consequatur eos impedit ipsum
+					ducimus cumque soluta quaerat deserunt sequi aspernatur voluptatem? Culpa neque eius odit aliquam.
+				</div>
+			</div>
+			<div class="row "> <!-- div to contain and push table below above elements -->
+				<table class="col table table-dark table-striped border"> <!-- container for entire table including head and body. bootstrap dark theme and striped styling-->
+					<thead> <!-- container for all head elements of a table-->
+						<th>Head 1</td>
+						<th>Head 2</td>
+						<th>Head 3</td>
+					</thead>
+					<tbody> <!-- body elements of table -->
+						<tr>
+							<td>Data 1.1</td>
+							<td>Data 2.1</td>
+							<td>Data 3.1</td>
+						</tr>
+						<tr>
+							<td>Data 1.2</td>
+							<td>Data 2.2</td>
+							<td>Data 3.2</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- Really unnecessary to dupliucate table, but did to show more column usage -->
+
+				<table class="col table table-dark table-striped border"> <!-- container for entire table including head and body. bootstrap dark theme and striped styling-->
+					<thead> <!-- container for all head elements of a table-->
+						<th>Head 1</td>
+						<th>Head 2</td>
+						<th>Head 3</td>
+					</thead>
+					<tbody> <!-- body elements of table -->
+						<tr>
+							<td>Data 1.1</td>
+							<td>Data 2.1</td>
+							<td>Data 3.1</td>
+						</tr>
+						<tr>
+							<td>Data 1.2</td>
+							<td>Data 2.2</td>
+							<td>Data 3.2</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
